@@ -37,11 +37,11 @@ public class DataEntity {
 
 
     public class Feedbacks {
-        private List<FeedbackList> feedbackList;
+        private List<Feedback> feedbackList;
         private int totalcount;
         private int totalscore;
 
-        public List<FeedbackList> getFeedbackList() {
+        public List<Feedback> getFeedbackList() {
             return this.feedbackList;
         }
 
@@ -53,7 +53,7 @@ public class DataEntity {
             return this.totalscore;
         }
 
-        public void setFeedbackList(List<FeedbackList> feedbackList) {
+        public void setFeedbackList(List<Feedback> feedbackList) {
             this.feedbackList = feedbackList;
         }
 
@@ -67,7 +67,7 @@ public class DataEntity {
 
     }
 
-    public class FeedbackList {
+    public class Feedback {
         private String comment;
         private String createtime;
         private int score;

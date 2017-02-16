@@ -5,4 +5,13 @@ package com.example.chenwenping.chenwenandroidgsontest.entity;
  */
 
 public class ErrEntity {
+    private String err;
+
+    public void setErr(String err) {
+        this.err = err;
+    }
+
+    public String getErr() {
+        return this.err;
+    }
 }
