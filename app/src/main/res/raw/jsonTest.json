@@ -1,5 +1,4 @@
 {
-  "data": {
     "partnerteamlist": [
       {
         "pteamId": 72825,
@@ -42,20 +41,5 @@
         "lteamprice": 580,
         "lmarketprice": 3380
       }
-    ],
-    "feedbacks": {
-      "feedbacklist": [
-        {
-          "comment": "5分",
-          "createtime": "2014.07.08 13:38",
-          "score": 5,
-          "username": "2"
-        }
-      ],
-      "totalcount": 1,
-      "totalscore": 5
-    }
-  },
-  "err": null,
-  "state": 1
+    ]
 }

@@ -9,7 +9,7 @@ import java.util.List;
 public class DataEntity {
     private List<PartnerTeamList> partnerteamlist;
     private List<LiketeamList> liketeamlist;
-    private List<Feedbacks> feedbacks;
+   // private List<Feedbacks> feedbacks;
 
     public void setPartnerteamlist(List<PartnerTeamList> partnerteamlist) {
         this.partnerteamlist = partnerteamlist;
@@ -19,9 +19,9 @@ public class DataEntity {
         this.liketeamlist = liketeamlist;
     }
 
-    public void setFeedbacks(List<Feedbacks> feedbacks) {
+    /*public void setFeedbacks(List<Feedbacks> feedbacks) {
         this.feedbacks = feedbacks;
-    }
+    }*/
 
     public List<PartnerTeamList> getPartnerteamlist() {
         return this.partnerteamlist;
@@ -31,9 +31,9 @@ public class DataEntity {
         return this.liketeamlist;
     }
 
-    public List<Feedbacks> getFeedbacks() {
+    /*public List<Feedbacks> getFeedbacks() {
         return this.feedbacks;
-    }
+    }*/
 
 
     public class Feedbacks {

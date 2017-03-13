@@ -9,7 +9,9 @@ import android.util.Log;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.example.chenwenping.chenwenandroidgsontest.entity.DataEntity;
 import com.example.chenwenping.chenwenandroidgsontest.utils.DataUtils;
+import com.example.chenwenping.chenwenandroidgsontest.utils.GsonUtils;
 
 import java.io.IOException;
 
@@ -32,13 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
         MyThread m = new MyThread();
         new Thread(m).start();
-
     }
-
-
-    /**
-     * 接受消息，处理消息 ，此Handler会与当前主线程一块运行
-     * */
 
     class MyHandler extends Handler {
         public MyHandler() {
@@ -73,6 +69,14 @@ public class MainActivity extends AppCompatActivity {
             } catch (IOException e) {
                 e.printStackTrace();
             }
+
+           // GsonUtils.jsonStringToList(jsonString, DataEntity.class);
+            DataEntity dataEntity = new DataEntity();
+
+            dataEntity = GsonUtils.jsonStringToClass(jsonString, DataEntity.class);
+            Log.d("dataEntity_Liketeamlist", dataEntity.getLiketeamlist().size() + "");
+            Log.d("dataEntity_Partnerteam", dataEntity.getPartnerteamlist().size() + "");
+
 
             try {
                 Thread.sleep(10000);
