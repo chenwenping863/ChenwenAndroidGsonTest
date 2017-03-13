@@ -17,6 +17,10 @@ public class ApplicationContext {
         return sInstance;
     }
 
+    public void setApplicationContext(Application application) {
+        sApplication = application;
+    }
+
     public Application getApplicationContext() {
         return sApplication;
     }
